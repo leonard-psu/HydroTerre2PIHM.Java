@@ -1,0 +1,6 @@
+From:	Alpha3
+
+updates:
+	use data[][] instead of writing at xml parser, that would improve perfomance of the program.
+	
+	
