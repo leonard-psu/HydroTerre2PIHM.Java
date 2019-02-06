@@ -1,6 +1,9 @@
 ### HydroTerre2PIHM (HTCT) 
 Convert HydroTerre ETV data bundles to be ready for PIHMgis v3.5 and PIHM v2.2.
 
+### User guide
+See HTCT_guide.pdf
+
 ### Windows Users
 Edit and use HTCT.bat
 
