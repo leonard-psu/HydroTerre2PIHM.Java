@@ -15,9 +15,9 @@ Windows users need to edit the following lines (top portion of HTCT.bat file)
 
 ### Windows Software Dependencies
 1. JAVA JRE needs to be installed. The HTCT.bat has been tested with jre1.8.0_201
-2. GDAL tools [gdal_rasterize, gdal_translate, and plugins] are required. Use of these methods:
-2.1 Install and build by source code https://www.gdal.org/
-2.2 OSGeo4W installer https://trac.osgeo.org/osgeo4w/ [Note: Tested with installing gdal components only]
+2. GDAL tools [gdal_rasterize, gdal_translate, and plugins] are required. Use one of these methods:
+[Option #1] Install and build by source code https://www.gdal.org/
+[Option #2] 2.2 OSGeo4W installer https://trac.osgeo.org/osgeo4w/ [Note: Tested with installing gdal components only]
 
 ### Linux and Mac Users
 Use HTCT.sh
