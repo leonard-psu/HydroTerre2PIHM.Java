@@ -19,7 +19,7 @@ Windows users need to edit the following lines (top portion of HTCT.bat file)
 2. GDAL tools [gdal_rasterize, gdal_translate, and plugins] are required. Use one of these methods:
 - [Option #1] Install and build by source code https://www.gdal.org/
 - [Option #2] 2.2 OSGeo4W installer https://trac.osgeo.org/osgeo4w/ [Note: Tested with installing gdal components only]
-- [Option #3] Windows Users Only: Unzip the gdal_min.zip into the same directory as the HTCT.bat location.
+- [Option #3] Windows Users Only: Unzip the gdal_min_windows_only.zip into the same directory as the HTCT.bat location.
 
 ### Linux and Mac Users
 Copy HTCT.sh and HTCT.jar into your unzipped ETV folder.
