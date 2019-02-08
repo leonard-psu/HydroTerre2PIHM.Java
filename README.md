@@ -8,11 +8,11 @@ See HTCT_guide.pdf
 Edit ( 5 steps below ) and use HTCT.bat
 
 Windows users need to edit the following lines (top portion of HTCT.bat file)
-1. Specify the input folder location of the unzipped ETV data bundle&nbsp;&nbsp;&nbsp;&nbsp;    set indir=E:\Temp\HydroTerre_ETV_Data
-2. Specify the output folder location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                   set outdir=%indir%\PIHM
-3. Specify the java install location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                    set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
-4. Specify the HTCT.jar location (from this git site)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
-5. Specify the gdal bin install location(gdal_rasterize,gdal_translate)&nbsp; set gdal_location="G:\OSGeo4W64\bin"
+1. Specify the input folder location of the unzipped ETV data bundle    set indir=E:\Temp\HydroTerre_ETV_Data
+2. Specify the output folder location<pre class="tab">                                   set outdir=%indir%\PIHM</pre>
+3. Specify the java install location                                    set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
+4. Specify the HTCT.jar location (from this git site)                   set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
+5. Specify the gdal bin install location(gdal_rasterize,gdal_translate) set gdal_location="G:\OSGeo4W64\bin"
 
 ### Windows Software Dependencies
 1. JAVA JRE needs to be installed. The HTCT.bat has been tested with jre1.8.0_201
