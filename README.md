@@ -12,6 +12,7 @@ Windows users need to edit the following lines (top portion of HTCT.bat file)
 2. Specify the output folder location                                   set outdir=%indir%\PIHM
 3. Specify the java install location                                    set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
 4. Specify the HTCT.jar location (from this git site)                   set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
+5. Specify the gdal bin install location(gdal_rasterize,gdal_translate) set gdal_location="G:\OSGeo4W64\bin"
 
 ### Windows Software Dependencies
 1. JAVA JRE needs to be installed. The HTCT.bat has been tested with jre1.8.0_201
