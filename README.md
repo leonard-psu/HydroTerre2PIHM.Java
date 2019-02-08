@@ -5,14 +5,14 @@ Convert HydroTerre ETV data bundles to be ready for PIHMgis v3.5 and PIHM v2.2.
 See HTCT_guide.pdf
 
 ### Windows Users
-Edit and use HTCT.bat
+Edit ( 5 steps below ) and use HTCT.bat
 
 Windows users need to edit the following lines (top portion of HTCT.bat file)
-1. Specify the input folder location of the unzipped ETV data bundle    set indir=E:\Temp\HydroTerre_ETV_Data
-2. Specify the output folder location                                   set outdir=%indir%\PIHM
-3. Specify the java install location                                    set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
-4. Specify the HTCT.jar location (from this git site)                   set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
-5. Specify the gdal bin install location(gdal_rasterize,gdal_translate) set gdal_location="G:\OSGeo4W64\bin"
+1. Specify the input folder location of the unzipped ETV data bundle&nbsp;&nbsp;&nbsp;&nbsp;    set indir=E:\Temp\HydroTerre_ETV_Data
+2. Specify the output folder location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                   set outdir=%indir%\PIHM
+3. Specify the java install location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                    set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
+4. Specify the HTCT.jar location (from this git site)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
+5. Specify the gdal bin install location(gdal_rasterize,gdal_translate)&nbsp; set gdal_location="G:\OSGeo4W64\bin"
 
 ### Windows Software Dependencies
 1. JAVA JRE needs to be installed. The HTCT.bat has been tested with jre1.8.0_201
@@ -22,11 +22,13 @@ Windows users need to edit the following lines (top portion of HTCT.bat file)
 - [Option #3] Windows Users Only: Unzip the gdal_min.zip into the same directory as the HTCT.bat location.
 
 ### Linux and Mac Users
-Use HTCT.sh
+Copy HTCT.sh and HTCT.jar into your unzipped ETV folder.
+Use HTCT.sh at command line within your unzipped ETV folder.
+
 
 ### Linux and Mac Software Dependencies
-1. JAVA JRE needs to be installed.
-2. GDAL
+1. JAVA JRE needs to be installed. [UBUNTU] sudo apt install default-jre
+2. GDAL [UBUNTU] sudo apt-get install gdal-bin
 
 Contact Lele Shu (lele 'dot' shu 'at' gmail.com) for more help.
 

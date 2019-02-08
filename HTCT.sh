@@ -91,7 +91,7 @@ echo ${array[1]}
 
 printf "\n\n\n";
 echo "Parsing forcing data"
-java -jar -Xmx8048m -Xms8012m HTCTXMLparser.jar $indir $outdir
+java -jar -Xmx8048m -Xms8012m HTCT.jar $indir $outdir
 
 
 
