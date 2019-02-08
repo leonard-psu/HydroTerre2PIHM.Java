@@ -4,6 +4,7 @@ set indir=E:\Temp\HydroTerre_ETV_Data
 set outdir=%indir%\PIHM
 set java_location="C:\Program Files\Java\jre1.8.0_201\bin\java"
 set HTCT_location="E:\PIHM_GIS\git_base\HydroTerre2PIHM.Java\HTCT.jar"
+set gdal_location="G:\OSGeo4W64\bin"
 
 REM ====================================================================================================================================================
 
@@ -26,10 +27,10 @@ mkdir %outdir%
 
 echo Rasterizing Forcing map: %forcmap%
 
-gdal_rasterize -a Force_ID  -a_nodata %nodatavalue% -ot Int32 -l HT_ForcingIDs -tr 30 30 %indir%\%forcmap% %indir%\%forctif%
-gdal_translate -of AAIGrid %indir%\%forctif% %outdir%\%forcasc%
-gdal_rasterize -a MUKEY -a_nodata $nodatavalue -ot Int32 -l HT_GGSURGO -tr 30 30 %indir%\%gsgmap% %indir%\%gsgtif%
-gdal_translate -of AAIGrid %indir%\%gsgtif% %outdir%\%gsgasc%
+%gdal_location%\gdal_rasterize -a Force_ID  -a_nodata %nodatavalue% -ot Int32 -l HT_ForcingIDs -tr 30 30 %indir%\%forcmap% %indir%\%forctif%
+%gdal_location%\gdal_translate -of AAIGrid %indir%\%forctif% %outdir%\%forcasc%
+%gdal_location%\gdal_rasterize -a MUKEY -a_nodata $nodatavalue -ot Int32 -l HT_GGSURGO -tr 30 30 %indir%\%gsgmap% %indir%\%gsgtif%
+%gdal_location%\gdal_translate -of AAIGrid %indir%\%gsgtif% %outdir%\%gsgasc%
 
 REM ====================================================================================================================================================
 REM Need to use ! for variables not % Classic problem
@@ -42,7 +43,7 @@ FOR %%i IN (%indir%\*.tif) DO (
  set outputfname=!outdir!\!str!
  echo !str!
  echo !outputfname!
- gdal_translate -of AAIGrid %%i !outputfname!
+ %gdal_location%\gdal_translate -of AAIGrid %%i !outputfname!
  )
 
 REM ====================================================================================================================================================
