@@ -21,6 +21,9 @@ fi
 
 nodatavalue=255;
 #========================================================================
+### If your ETV folder is in different location uncomment (remove #) the following cd line
+
+#cd "/home/rachel/Documents/PSU/Research/PIHM/Watersheds/NRW/HWRR_3/HydroTerre_ETV_Data(1)/"
 
 indir="$(pwd)/";
 printf "\nCurrent working path:"
